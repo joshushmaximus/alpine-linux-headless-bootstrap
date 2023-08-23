@@ -19,7 +19,7 @@ As with Alpine Linux initial bring-up, `root` account has no password initially 
 From there, actual system install can be performed as usual with `setup-alpine` for instance (check [wiki](https://wiki.alpinelinux.org/wiki/Alpine_setup_scripts#setup-alpine) for details).
 
 ## Extra configuration:
-Extra files may be added next to `headless.apkovl.tar.gz` to customise boostrapping configuration (check sample files):
+Extra files may be added in the root of Alpine Linux boot media (same place as`headless.apkovl.tar.gz)` to customise boostrapping configuration (check sample files):
 - `wpa_supplicant.conf`[^3] (*mandatory for wifi usecase*): define wifi SSID & password.
 - `interfaces`[^3] (*optional*): define network interfaces at will, if defaults DCHP-based are not suitable.
 - `ssh_host_*_key*` (*optional*): provide custom ssh keys to be injected (may be stored), instead of using bundled ones[^2] (not stored). Providing an empty key file will trigger new keys generation (ssh server may take longer to start).
